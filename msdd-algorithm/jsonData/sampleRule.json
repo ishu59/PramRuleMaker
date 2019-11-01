@@ -1,0 +1,66 @@
+[{
+"attribute": ["flu"],
+   "precursor": ["S"],
+   "successor": [
+      {
+         "successorAttribute": ["flu"],
+         "value": ["S"],
+         "probability": 0.7
+      },
+      {
+         "successorAttribute": ["flu"],
+         "value": ["I"],
+         "probability": 0.3
+      },
+      {
+         "successorAttribute": ["flu"],
+         "value": ["R"],
+         "probability": 0
+      }
+   ]
+
+},
+{
+   "attribute": ["flu"],
+   "precursor": ["I"],
+   "successor": [
+      {
+         "successorAttribute": ["flu"],
+         "value": ["S"],
+         "probability": 0
+      },
+      {
+         "successorAttribute": ["flu"],
+         "value": ["I"],
+         "probability": 0.5
+      },
+      {
+         "successorAttribute": ["flu"],
+         "value": ["R"],
+         "probability": 0.5
+      }
+   ]
+
+},
+{
+
+   "attribute": ["flu"],
+   "precursor": ["R"],
+   "successor": [
+      {
+         "successorAttribute": ["flu"],
+         "value": ["S"],
+         "probability": 0.3
+      },
+      {
+         "successorAttribute": ["flu"],
+         "value": ["I"],
+         "probability": 0
+      },
+      {
+         "successorAttribute": ["flu"],
+         "value": ["R"],
+         "probability": 0.7
+      }
+   ]
+}]

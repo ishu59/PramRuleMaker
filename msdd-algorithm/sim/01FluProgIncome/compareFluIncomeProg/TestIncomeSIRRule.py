@@ -105,19 +105,19 @@ class ProgressFluIncomeRule(Rule):
 
 
 # ----------------------------------------------------------------------------------------------------------------------
-def sim02(iter_cnt):
-    sim = (
-        Simulation().
-        add([
-            ProgressFluIncomeRule(),
-            GroupSizeProbe.by_attr('flu', 'flu', ['s', 'e', 'r'], msg_mode=ProbeMsgMode.CUMUL),
-            Group(m=500, attr={ 'income': 'l' }),
-            Group(m=500, attr={ 'income': 'm' })
-        ]).
-        run(iter_cnt)
-    )
-    print(sim.probes[0].get_msg())
-    print()
+# def sim02(iter_cnt):
+#     sim = (
+#         Simulation().
+#         add([
+#             ProgressFluIncomeRule(),
+#             GroupSizeProbe.by_attr('flu', 'flu', ['s', 'e', 'r'], msg_mode=ProbeMsgMode.CUMUL),
+#             Group(m=500, attr={ 'income': 'l' }),
+#             Group(m=500, attr={ 'income': 'm' })
+#         ]).
+#         run(iter_cnt)
+#     )
+#     print(sim.probes[0].get_msg())
+#     print()
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -148,5 +148,5 @@ def sim03(iter_cnt):
 actual_rule_path = r'/home/ishu/Documents/res-work/prams/pram/src/sim/04-flu-prog-02-income/sim.py'
 print('Rule is taken from path',actual_rule_path)
 iter_cnt = 64
-sim02(iter_cnt)
+# sim02(iter_cnt)
 sim03(iter_cnt)

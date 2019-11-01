@@ -1,6 +1,5 @@
 import os,sys
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from algorithm import msdd_algorithm_simple, generate_class_from_rule_dict_large, clean_data
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))  # 'rules' module

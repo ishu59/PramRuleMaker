@@ -1,18 +1,14 @@
 import os,sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))  # 'rules' module
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
-from typing import List, Dict
+from typing import List, Dict, Union, Optional
 from collections import defaultdict, OrderedDict
 import numpy as np
 import scipy as sp
 from SequenceGenerator import SequenceGenerator
 from pprint import pprint
 from DependentSequenceGenerator import HiddenModel
-
-# from pram.data   import GroupSizeProbe, ProbeMsgMode
-# from pram.entity import Group, GroupQry, GroupSplitSpec, Site
-# from pram.rule   import GoToRule, DiscreteInvMarkovChain, TimeInt, Rule
-# from pram.sim    import Simulation
+from PramRulesArributes import PramRulesArributes
 
 def get_sample_seq():
     transition = {'S': {'S': 0.7, 'I': 0.3, 'R': 0}, 'I': {'S': 0, 'I': 0.5, 'R': 0.5},
@@ -209,6 +205,10 @@ def test_msdd_simple():
     rule_dict = msdd_algorithm_simple()
     generate_class_from_rule_dict(rule_dict)
 
+def get_pram_attribute_from_rule(rules_dict:Dict):
+    pram_rule_attr = PramRulesArributes()
+
+
 def test_msdd_simple2():
     transition = {'S': {'S': 0.7, 'I': 0.3, 'R': 0}, 'I': {'S': 0, 'I': 0.5, 'R': 0.5},
                   'R': {'S': 0.3, 'I': 0.0, 'R': 0.7}}
@@ -216,7 +216,7 @@ def test_msdd_simple2():
     sequence_data = SIR.generate_states(current_state='S', nt=2000)
     rule_dict = msdd_algorithm_simple(sequence_data, precursor_width= 1, sucessor_width= 1, lagtime_between=1, dependency_evaluator_fn = None, num_rules = None)
     pprint(rule_dict)
-    generate_class_from_rule_dict_large(rule_dict)
+    # generate_class_from_rule_dict_large(rule_dict)
 
 def clean_data(l:List):
     return [x for x in l if x not in ['',' ',',','\n']]
