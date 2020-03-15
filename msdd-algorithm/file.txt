@@ -1,6 +1,0 @@
-{'S'} ==> {'I'} #Probability: 1.0
-{'I'} ==> {'S'} #Probability: 1.0
-{'S'} ==> {'R'} #Probability: 1.0
-{'R'} ==> {'S'} #Probability: 1.0
-{'I'} ==> {'R'} #Probability: 1.0
-{'R'} ==> {'I'} #Probability: 1.0

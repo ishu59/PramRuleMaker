@@ -1,4 +1,0 @@
-a , a c d , a d , e , d g , c
-a e , d , c d , a f , c
-f g , a c , e g , d , c , c
-f , h , a g , d , c , d , c
