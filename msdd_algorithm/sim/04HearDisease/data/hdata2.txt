@@ -1,0 +1,11 @@
+cp_2	oldpeak_0	hd_no	,	cp_3	oldpeak_1	hd_yes	,	cp_4	oldpeak_1	hd_yes
+cp_2	oldpeak_0	hd_no	,	cp_3	oldpeak_0	hd_no	,	cp_4	oldpeak_1	hd_yes
+cp_2	oldpeak_0	hd_no	,	cp_1	oldpeak_0	hd_no	,	cp_2	oldpeak_0	hd_no
+cp_2	oldpeak_0	hd_no	,	cp_2	oldpeak_0	hd_no	,	cp_2	oldpeak_0	hd_no
+cp_1	oldpeak_0	hd_no	,	cp_3	oldpeak_0	hd_no	,	cp_3	oldpeak_0	hd_no
+cp_3	oldpeak_0	hd_no	,	cp_4	oldpeak_0	hd_no	,	cp_4	oldpeak_0	hd_yes
+cp_4	oldpeak_1	hd_yes	,	cp_4	oldpeak_1	hd_yes	,	cp_4	oldpeak_1	hd_yes
+cp_4	oldpeak_1	hd_yes	,	cp_4	oldpeak_1	hd_yes	,	cp_4	oldpeak_1	hd_yes
+cp_1	oldpeak_0	hd_no	,	cp_2	oldpeak_0	hd_no	,	cp_2	oldpeak_0	hd_no
+cp_2	oldpeak_0	hd_no	,	cp_3	oldpeak_0	hd_no	,	cp_3	oldpeak_0	hd_no
+cp_2	oldpeak_0	hd_no	,	cp_4	oldpeak_0	hd_no	,	cp_4	oldpeak_1	hd_yes

@@ -1,9 +1,0 @@
-{'a'} ==> {'c'} #SUPORT: 1.0 #CONFIDENCE: 1.0
-{'a'} ==> {'d', 'c'} #SUPORT: 1.0 #CONFIDENCE: 1.0
-{'a'} ==> {'d'} #SUPORT: 1.0 #CONFIDENCE: 1.0
-{'a', 'e'} ==> {'d'} #SUPORT: 0.75 #CONFIDENCE: 1.0
-{'e'} ==> {'d'} #SUPORT: 0.75 #CONFIDENCE: 1.0
-{'d', 'a'} ==> {'c'} #SUPORT: 0.75 #CONFIDENCE: 0.75
-{'a', 'c'} ==> {'d'} #SUPORT: 0.75 #CONFIDENCE: 0.75
-{'c'} ==> {'d'} #SUPORT: 0.75 #CONFIDENCE: 0.75
-{'d'} ==> {'c'} #SUPORT: 0.75 #CONFIDENCE: 0.75

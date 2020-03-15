@@ -1,0 +1,10 @@
+#Adding these lines to the end of file => ~/.bash_rc
+
+export EIDOSPATH=/home/ishu/Documents/res-work/eidos/eidos/target/scala-2.12/eidos-assembly-0.2.3-SNAPSHOT.jar
+export CLASSPATH=$EIDOSPATH:$CLASSPATH
+export PATH=$CLASSPATH:$PATH
+
+#save and refresh shell
+
+source ~/.bashrc
+

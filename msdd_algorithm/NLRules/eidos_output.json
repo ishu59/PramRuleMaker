@@ -1,0 +1,1333 @@
+{
+  "@context": {
+    "Argument": "https://w3id.org/wm/cag/argument",
+    "Grounding": "https://w3id.org/wm/cag/grounding",
+    "Interval": "https://w3id.org/wm/cag/interval",
+    "Extraction": "https://w3id.org/wm/cag/extraction",
+    "Provenance": "https://w3id.org/wm/cag/provenance",
+    "Groundings": "https://w3id.org/wm/cag/groundings",
+    "Dependency": "https://w3id.org/wm/cag/dependency",
+    "Corpus": "https://w3id.org/wm/cag/corpus",
+    "Trigger": "https://w3id.org/wm/cag/trigger",
+    "Sentence": "https://w3id.org/wm/cag/sentence",
+    "Word": "https://w3id.org/wm/cag/word",
+    "Document": "https://w3id.org/wm/cag/document"
+  },
+  "@type": "Corpus",
+  "documents": [
+    {
+      "@type": "Document",
+      "@id": "_:Document_1",
+      "text": "Conflict causes displacement, which leads to hunger",
+      "sentences": [
+        {
+          "text": "Conflict causes displacement , which leads to hunger .",
+          "words": [
+            {
+              "endOffset": 8,
+              "chunk": "B-NP",
+              "lemma": "conflict",
+              "tag": "NN",
+              "text": "Conflict",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 0,
+              "@type": "Word",
+              "@id": "_:Word_1"
+            },
+            {
+              "endOffset": 15,
+              "chunk": "I-NP",
+              "lemma": "cause",
+              "tag": "VBZ",
+              "text": "causes",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 9,
+              "@type": "Word",
+              "@id": "_:Word_2"
+            },
+            {
+              "endOffset": 28,
+              "chunk": "I-NP",
+              "lemma": "displacement",
+              "tag": "NN",
+              "text": "displacement",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 16,
+              "@type": "Word",
+              "@id": "_:Word_3"
+            },
+            {
+              "endOffset": 29,
+              "chunk": "O",
+              "lemma": ",",
+              "tag": ",",
+              "text": ",",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 28,
+              "@type": "Word",
+              "@id": "_:Word_4"
+            },
+            {
+              "endOffset": 35,
+              "chunk": "B-NP",
+              "lemma": "which",
+              "tag": "WDT",
+              "text": "which",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 30,
+              "@type": "Word",
+              "@id": "_:Word_5"
+            },
+            {
+              "endOffset": 41,
+              "chunk": "B-VP",
+              "lemma": "lead",
+              "tag": "VBZ",
+              "text": "leads",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 36,
+              "@type": "Word",
+              "@id": "_:Word_6"
+            },
+            {
+              "endOffset": 44,
+              "chunk": "B-PP",
+              "lemma": "to",
+              "tag": "TO",
+              "text": "to",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 42,
+              "@type": "Word",
+              "@id": "_:Word_7"
+            },
+            {
+              "endOffset": 51,
+              "chunk": "B-NP",
+              "lemma": "hunger",
+              "tag": "NN",
+              "text": "hunger",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 45,
+              "@type": "Word",
+              "@id": "_:Word_8"
+            },
+            {
+              "endOffset": 51,
+              "chunk": "O",
+              "lemma": ".",
+              "tag": ".",
+              "text": ".",
+              "norm": "O",
+              "entity": "O",
+              "startOffset": 51,
+              "@type": "Word",
+              "@id": "_:Word_9"
+            }
+          ],
+          "@type": "Sentence",
+          "dependencies": [
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_2"
+              },
+              "destination": {
+                "@id": "_:Word_1"
+              },
+              "relation": "nsubj"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_2"
+              },
+              "destination": {
+                "@id": "_:Word_3"
+              },
+              "relation": "dobj"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_2"
+              },
+              "destination": {
+                "@id": "_:Word_9"
+              },
+              "relation": "punct"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_3"
+              },
+              "destination": {
+                "@id": "_:Word_4"
+              },
+              "relation": "punct"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_3"
+              },
+              "destination": {
+                "@id": "_:Word_5"
+              },
+              "relation": "ref"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_3"
+              },
+              "destination": {
+                "@id": "_:Word_6"
+              },
+              "relation": "acl:relcl"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_6"
+              },
+              "destination": {
+                "@id": "_:Word_3"
+              },
+              "relation": "nsubj"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_6"
+              },
+              "destination": {
+                "@id": "_:Word_8"
+              },
+              "relation": "nmod_to"
+            },
+            {
+              "@type": "Dependency",
+              "source": {
+                "@id": "_:Word_8"
+              },
+              "destination": {
+                "@id": "_:Word_7"
+              },
+              "relation": "case"
+            }
+          ],
+          "@id": "_:Sentence_1"
+        }
+      ]
+    }
+  ],
+  "extractions": [
+    {
+      "subtype": "entity",
+      "rule": "simple-np",
+      "text": "Conflict",
+      "canonicalName": "conflict",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "provenance": [
+        {
+          "documentCharPositions": [
+            {
+              "@type": "Interval",
+              "start": 0,
+              "end": 7
+            }
+          ],
+          "document": {
+            "@id": "_:Document_1"
+          },
+          "sentenceWordPositions": [
+            {
+              "@type": "Interval",
+              "start": 1,
+              "end": 1
+            }
+          ],
+          "@type": "Provenance",
+          "sentence": {
+            "@id": "_:Sentence_1"
+          }
+        }
+      ],
+      "@type": "Extraction",
+      "type": "concept",
+      "groundings": [
+        {
+          "@type": "Groundings",
+          "name": "interventions",
+          "version": "359829afbe9bb5ba9af990121c1bd936a52e7a2e",
+          "versionDate": "2019-02-24T01:21:07Z"
+        },
+        {
+          "name": "mitre12",
+          "versionDate": "2019-01-16T20:38:37Z",
+          "version": "c60184fd04a89ebdea7ccf633b83e6bc6623a207",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Conflict incidences",
+              "value": 0.9999999403953552
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Conflict fatalities",
+              "value": 0.7534749507904053
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, new displacement associated with conflict and violence",
+              "value": 0.6388248801231384
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, total displaced by conflict and violence",
+              "value": 0.6126719117164612
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage of livestock migrating due to conflict \\/ insecurity",
+              "value": 0.5312178730964661
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Value, Political stability and absence of violence\\/terrorism (index)",
+              "value": 0.44798803329467773
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, new displacement associated with disasters",
+              "value": 0.35565876960754395
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Legislation exists on domestic violence",
+              "value": 0.3526962697505951
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Presence of peace keepers",
+              "value": 0.31402647495269775
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage reporting insecurity as the main forage constraint",
+              "value": 0.28936195373535156
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "@type": "Groundings",
+          "name": "props",
+          "version": "104fb23a0ab1ef178c133a95a0b25f42c4ea94ca",
+          "versionDate": "2018-08-07T23:00:18Z"
+        },
+        {
+          "name": "un",
+          "versionDate": "2019-01-05T06:06:38Z",
+          "version": "dd7a44ceac00dc514d0c5926b25235018deb5670",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/conflict",
+              "value": 0.7292178273200989
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/political/political_instability",
+              "value": 0.5194771885871887
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/economic_crisis",
+              "value": 0.4181205630302429
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/crisis",
+              "value": 0.3941281735897064
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/physical_insecurity",
+              "value": 0.3922896087169647
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/political/independence",
+              "value": 0.35235029458999634
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/food/food_insecurity",
+              "value": 0.32478681206703186
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/interventions/humanitarian assistance",
+              "value": 0.31395071744918823
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/famine",
+              "value": 0.3078692555427551
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/GPE",
+              "value": 0.30502957105636597
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "name": "who",
+          "versionDate": "2018-11-21T22:10:05Z",
+          "version": "94f46343f7428aac6160e24788850a8fe6e8c5e7",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Risk Factors/Injuries/Intimate partner violence prevalence",
+              "value": 0.35899659991264343
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/Neglected tropical diseases/Coverage of preventive chemotherapy for selected neglected tropical diseases",
+              "value": 0.21980443596839905
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/Mental Health/Coverage of services for severe mental health disorders",
+              "value": 0.21687281131744385
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Systems/Quality and safety of care/Maternal death reviews",
+              "value": 0.20969805121421814
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Systems/Quality and safety of care/Institutional maternal mortality ratio",
+              "value": 0.20801129937171936
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/Mortality rate from road traffic injuries",
+              "value": 0.2062368243932724
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Systems/Health financing/Headcount ratio of catastrophic health expenditure",
+              "value": 0.2053801566362381
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/Malaria mortality rate",
+              "value": 0.20165343582630157
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Morbidity/New cases of IHR-notifiable diseases and other notifiable diseases",
+              "value": 0.19698943197727203
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/Malaria/Intermittent preventive therapy for malaria during pregnancy (IPTp)",
+              "value": 0.18720102310180664
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "name": "wm",
+          "versionDate": "2019-12-08T17:50:13Z",
+          "version": "9ab306d4ccda1f52ba0e8dffaadb7983187df2ad",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/conflict/hostility",
+              "value": 0.644227921962738
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/intervention/peacekeeping_and_security",
+              "value": 0.6299259066581726
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/conflict/war",
+              "value": 0.6228538751602173
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/political/political_instability",
+              "value": 0.5470797419548035
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/conflict/demonstrate",
+              "value": 0.5461075901985168
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/condition/tension",
+              "value": 0.4678904116153717
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/crisis_and_disaster/crisis",
+              "value": 0.426534503698349
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/conflict/attack",
+              "value": 0.41329312324523926
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/intervention/provision_of_goods_and_services/health/sexual_violence_management",
+              "value": 0.39656203985214233
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/crisis_and_disaster/economic/economic_crisis",
+              "value": 0.39534109830856323
+            }
+          ],
+          "@type": "Groundings"
+        }
+      ],
+      "@id": "_:Extraction_1"
+    },
+    {
+      "subtype": "causation",
+      "rule": "ported_syntax_1_verb-Causal",
+      "text": "Conflict causes displacement",
+      "canonicalName": "conflict cause displacement",
+      "labels": [
+        "Causal",
+        "DirectedRelation",
+        "EntityLinker",
+        "Event"
+      ],
+      "provenance": [
+        {
+          "documentCharPositions": [
+            {
+              "@type": "Interval",
+              "start": 0,
+              "end": 27
+            }
+          ],
+          "document": {
+            "@id": "_:Document_1"
+          },
+          "sentenceWordPositions": [
+            {
+              "@type": "Interval",
+              "start": 1,
+              "end": 3
+            }
+          ],
+          "@type": "Provenance",
+          "sentence": {
+            "@id": "_:Sentence_1"
+          }
+        }
+      ],
+      "@type": "Extraction",
+      "type": "relation",
+      "groundings": [
+        {
+          "@type": "Groundings",
+          "name": "interventions",
+          "version": "359829afbe9bb5ba9af990121c1bd936a52e7a2e",
+          "versionDate": "2019-02-24T01:21:07Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "mitre12",
+          "version": "c60184fd04a89ebdea7ccf633b83e6bc6623a207",
+          "versionDate": "2019-01-16T20:38:37Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "props",
+          "version": "104fb23a0ab1ef178c133a95a0b25f42c4ea94ca",
+          "versionDate": "2018-08-07T23:00:18Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "un",
+          "version": "dd7a44ceac00dc514d0c5926b25235018deb5670",
+          "versionDate": "2019-01-05T06:06:38Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "who",
+          "version": "94f46343f7428aac6160e24788850a8fe6e8c5e7",
+          "versionDate": "2018-11-21T22:10:05Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "wm",
+          "version": "9ab306d4ccda1f52ba0e8dffaadb7983187df2ad",
+          "versionDate": "2019-12-08T17:50:13Z"
+        }
+      ],
+      "arguments": [
+        {
+          "@type": "Argument",
+          "type": "source",
+          "value": {
+            "@id": "_:Extraction_1"
+          }
+        },
+        {
+          "@type": "Argument",
+          "type": "destination",
+          "value": {
+            "@id": "_:Extraction_3"
+          }
+        }
+      ],
+      "@id": "_:Extraction_2",
+      "trigger": {
+        "@type": "Trigger",
+        "text": "causes",
+        "provenance": [
+          {
+            "documentCharPositions": [
+              {
+                "@type": "Interval",
+                "start": 9,
+                "end": 14
+              }
+            ],
+            "document": {
+              "@id": "_:Document_1"
+            },
+            "sentenceWordPositions": [
+              {
+                "@type": "Interval",
+                "start": 2,
+                "end": 2
+              }
+            ],
+            "@type": "Provenance",
+            "sentence": {
+              "@id": "_:Sentence_1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "subtype": "entity",
+      "rule": "simple-np",
+      "text": "displacement",
+      "canonicalName": "displacement",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "provenance": [
+        {
+          "documentCharPositions": [
+            {
+              "@type": "Interval",
+              "start": 16,
+              "end": 27
+            }
+          ],
+          "document": {
+            "@id": "_:Document_1"
+          },
+          "sentenceWordPositions": [
+            {
+              "@type": "Interval",
+              "start": 3,
+              "end": 3
+            }
+          ],
+          "@type": "Provenance",
+          "sentence": {
+            "@id": "_:Sentence_1"
+          }
+        }
+      ],
+      "@type": "Extraction",
+      "type": "concept",
+      "groundings": [
+        {
+          "@type": "Groundings",
+          "name": "interventions",
+          "version": "359829afbe9bb5ba9af990121c1bd936a52e7a2e",
+          "versionDate": "2019-02-24T01:21:07Z"
+        },
+        {
+          "name": "mitre12",
+          "versionDate": "2019-01-16T20:38:37Z",
+          "version": "c60184fd04a89ebdea7ccf633b83e6bc6623a207",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, new displacement associated with conflict and violence",
+              "value": 0.638778805732727
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, new displacement associated with disasters",
+              "value": 0.6222530603408813
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, total displaced by conflict and violence",
+              "value": 0.5146491527557373
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage of livestock migrating due to conflict \\/ insecurity",
+              "value": 0.45276734232902527
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage of livestock migrating migration",
+              "value": 0.3751855790615082
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Value, Prevalence of severe food insecurity in the total population",
+              "value": 0.3677294850349426
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Migration normal at this time of year, No",
+              "value": 0.35438814759254456
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage of cattle loss accounted for by starvation",
+              "value": 0.3539700508117676
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Migration normal at this time of year, Yes",
+              "value": 0.33824679255485535
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage of poultry loss accounted for by starvation",
+              "value": 0.32967108488082886
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "@type": "Groundings",
+          "name": "props",
+          "version": "104fb23a0ab1ef178c133a95a0b25f42c4ea94ca",
+          "versionDate": "2018-08-07T23:00:18Z"
+        },
+        {
+          "name": "un",
+          "versionDate": "2019-01-05T06:06:38Z",
+          "version": "dd7a44ceac00dc514d0c5926b25235018deb5670",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/human_migration",
+              "value": 0.63105708360672
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/physical_insecurity",
+              "value": 0.4391251802444458
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/famine",
+              "value": 0.39989176392555237
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/interventions/humanitarian assistance",
+              "value": 0.36741527915000916
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/nature_impact/pollution/climate_change",
+              "value": 0.36371663212776184
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/political/political_instability",
+              "value": 0.33539310097694397
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/financial/economic/poverty",
+              "value": 0.3083617091178894
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/death",
+              "value": 0.30735886096954346
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/conflict",
+              "value": 0.3041136860847473
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/food/food_insecurity",
+              "value": 0.29740703105926514
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "name": "who",
+          "versionDate": "2018-11-21T22:10:05Z",
+          "version": "94f46343f7428aac6160e24788850a8fe6e8c5e7",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/HIV\\/TB/HIV test results for registered new and relapse TB patients",
+              "value": 0.27322253584861755
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/Reproductive, maternal, newborn, child and adolescent/Demand for family planning satis ed with modern methods",
+              "value": 0.27268674969673157
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Systems/Health financing/Headcount ratio of catastrophic health expenditure",
+              "value": 0.25762704014778137
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Systems/Health financing/Headcount ratio of impoverishing health expenditure",
+              "value": 0.24694213271141052
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Risk Factors/Environmental risk factors/Population using modern fuels for cooking\\/heating\\/lighting",
+              "value": 0.24430589377880096
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/Malaria mortality rate",
+              "value": 0.24276763200759888
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/HIV/HIV viral load suppression",
+              "value": 0.23204022645950317
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/TB mortality rate",
+              "value": 0.22463487088680267
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Systems/Health workforce/Health worker density and distribution",
+              "value": 0.22164468467235565
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/Mortality rate from road traffic injuries",
+              "value": 0.2205871194601059
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "name": "wm",
+          "versionDate": "2019-12-08T17:50:13Z",
+          "version": "9ab306d4ccda1f52ba0e8dffaadb7983187df2ad",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/migration/human_migration",
+              "value": 0.659249484539032
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/migration/seasonal_migration",
+              "value": 0.4355751574039459
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/migration/hosting_idps",
+              "value": 0.4084223806858063
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/population_group/de-population",
+              "value": 0.40445902943611145
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/condition/famine",
+              "value": 0.3946494162082672
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/movement/animal_migration",
+              "value": 0.37923458218574524
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/threat/physical_insecurity",
+              "value": 0.37596166133880615
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/environmental/pollution/climate_change",
+              "value": 0.36371663212776184
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/migration/emigration",
+              "value": 0.36017951369285583
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/social_and_political/population_group/overcrowding",
+              "value": 0.35961639881134033
+            }
+          ],
+          "@type": "Groundings"
+        }
+      ],
+      "@id": "_:Extraction_3"
+    },
+    {
+      "subtype": "causation",
+      "rule": "leadToSyntax1-Causal",
+      "text": "displacement, which leads to hunger",
+      "canonicalName": "displacement lead hunger",
+      "labels": [
+        "Causal",
+        "DirectedRelation",
+        "EntityLinker",
+        "Event"
+      ],
+      "provenance": [
+        {
+          "documentCharPositions": [
+            {
+              "@type": "Interval",
+              "start": 16,
+              "end": 50
+            }
+          ],
+          "document": {
+            "@id": "_:Document_1"
+          },
+          "sentenceWordPositions": [
+            {
+              "@type": "Interval",
+              "start": 3,
+              "end": 8
+            }
+          ],
+          "@type": "Provenance",
+          "sentence": {
+            "@id": "_:Sentence_1"
+          }
+        }
+      ],
+      "@type": "Extraction",
+      "type": "relation",
+      "groundings": [
+        {
+          "@type": "Groundings",
+          "name": "interventions",
+          "version": "359829afbe9bb5ba9af990121c1bd936a52e7a2e",
+          "versionDate": "2019-02-24T01:21:07Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "mitre12",
+          "version": "c60184fd04a89ebdea7ccf633b83e6bc6623a207",
+          "versionDate": "2019-01-16T20:38:37Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "props",
+          "version": "104fb23a0ab1ef178c133a95a0b25f42c4ea94ca",
+          "versionDate": "2018-08-07T23:00:18Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "un",
+          "version": "dd7a44ceac00dc514d0c5926b25235018deb5670",
+          "versionDate": "2019-01-05T06:06:38Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "who",
+          "version": "94f46343f7428aac6160e24788850a8fe6e8c5e7",
+          "versionDate": "2018-11-21T22:10:05Z"
+        },
+        {
+          "@type": "Groundings",
+          "name": "wm",
+          "version": "9ab306d4ccda1f52ba0e8dffaadb7983187df2ad",
+          "versionDate": "2019-12-08T17:50:13Z"
+        }
+      ],
+      "arguments": [
+        {
+          "@type": "Argument",
+          "type": "source",
+          "value": {
+            "@id": "_:Extraction_3"
+          }
+        },
+        {
+          "@type": "Argument",
+          "type": "destination",
+          "value": {
+            "@id": "_:Extraction_5"
+          }
+        }
+      ],
+      "@id": "_:Extraction_4",
+      "trigger": {
+        "@type": "Trigger",
+        "text": "leads",
+        "provenance": [
+          {
+            "documentCharPositions": [
+              {
+                "@type": "Interval",
+                "start": 36,
+                "end": 40
+              }
+            ],
+            "document": {
+              "@id": "_:Document_1"
+            },
+            "sentenceWordPositions": [
+              {
+                "@type": "Interval",
+                "start": 6,
+                "end": 6
+              }
+            ],
+            "@type": "Provenance",
+            "sentence": {
+              "@id": "_:Sentence_1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "subtype": "entity",
+      "rule": "simple-np",
+      "text": "hunger",
+      "canonicalName": "hunger",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "provenance": [
+        {
+          "documentCharPositions": [
+            {
+              "@type": "Interval",
+              "start": 45,
+              "end": 50
+            }
+          ],
+          "document": {
+            "@id": "_:Document_1"
+          },
+          "sentenceWordPositions": [
+            {
+              "@type": "Interval",
+              "start": 8,
+              "end": 8
+            }
+          ],
+          "@type": "Provenance",
+          "sentence": {
+            "@id": "_:Sentence_1"
+          }
+        }
+      ],
+      "@type": "Extraction",
+      "type": "concept",
+      "groundings": [
+        {
+          "@type": "Groundings",
+          "name": "interventions",
+          "version": "359829afbe9bb5ba9af990121c1bd936a52e7a2e",
+          "versionDate": "2019-02-24T01:21:07Z"
+        },
+        {
+          "name": "mitre12",
+          "versionDate": "2019-01-16T20:38:37Z",
+          "version": "c60184fd04a89ebdea7ccf633b83e6bc6623a207",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Incidence of malaria",
+              "value": 0.45740213990211487
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Value, Prevalence of severe food insecurity in the total population",
+              "value": 0.41518738865852356
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions",
+              "value": 0.410411536693573
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Number of children aged 6 to 59 months with severe acute malnutrition admitted for treatment",
+              "value": 0.39510995149612427
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Food aid shipments, Cereals",
+              "value": 0.363492876291275
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Cause of death, by non-communicable diseases",
+              "value": 0.3454335033893585
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70",
+              "value": 0.3383551239967346
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage of poultry loss accounted for by starvation",
+              "value": 0.3374035358428955
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Internally displaced persons, total displaced by conflict and violence",
+              "value": 0.3348459005355835
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "MITRE12/Percentage reporting insecurity as the main forage constraint",
+              "value": 0.33469516038894653
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "@type": "Groundings",
+          "name": "props",
+          "version": "104fb23a0ab1ef178c133a95a0b25f42c4ea94ca",
+          "versionDate": "2018-08-07T23:00:18Z"
+        },
+        {
+          "name": "un",
+          "versionDate": "2019-01-05T06:06:38Z",
+          "version": "dd7a44ceac00dc514d0c5926b25235018deb5670",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/famine",
+              "value": 0.8159552812576294
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/food/food_insecurity",
+              "value": 0.6094805598258972
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/financial/economic/poverty",
+              "value": 0.5418576598167419
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/human/physical_insecurity",
+              "value": 0.4540584981441498
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/nature_impact/pollution/climate_change",
+              "value": 0.43557822704315186
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/food/food_security",
+              "value": 0.4245942234992981
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/events/natural_disaster/drought",
+              "value": 0.4191633462905884
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/interventions/humanitarian assistance",
+              "value": 0.4147801995277405
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/food_availability",
+              "value": 0.41374471783638
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "UN/entities/human/health/disease",
+              "value": 0.3849664032459259
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "name": "who",
+          "versionDate": "2018-11-21T22:10:05Z",
+          "version": "94f46343f7428aac6160e24788850a8fe6e8c5e7",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Morbidity/Malaria incidence rate",
+              "value": 0.45740213990211487
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/Malaria mortality rate",
+              "value": 0.4348047971725464
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Mortality by cause/Mortality between 30 and 70 years of age from cardiovascular diseases, cancer, diabetes or chronic respiratory diseases",
+              "value": 0.37994059920310974
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Morbidity/Malaria parasite prevalence among children aged 6-59 months",
+              "value": 0.342366099357605
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Risk Factors/Noncommunicable diseases/Overweight and obesity in adults (Also adolescents)",
+              "value": 0.3380655348300934
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Service Coverage/Malaria/Treatment of confirmed malaria cases",
+              "value": 0.30128008127212524
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Morbidity/Cancer incidence, by type of cancer",
+              "value": 0.301094114780426
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Health Status/Morbidity/New cases of IHR-notifiable diseases and other notifiable diseases",
+              "value": 0.29957109689712524
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Risk Factors/Noncommunicable diseases/Raised blood glucose\\/diabetes among adults",
+              "value": 0.2864474654197693
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "WHO/Risk Factors/Noncommunicable diseases/Insufficient physical activity in adults (Also adolescents)",
+              "value": 0.2855178415775299
+            }
+          ],
+          "@type": "Groundings"
+        },
+        {
+          "name": "wm",
+          "versionDate": "2019-12-08T17:50:13Z",
+          "version": "9ab306d4ccda1f52ba0e8dffaadb7983187df2ad",
+          "values": [
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/condition/famine",
+              "value": 0.6868495345115662
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/health_and_life/nutrition/malnutrition",
+              "value": 0.5853353142738342
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/condition/food_insecurity/food_unavailability",
+              "value": 0.5133861899375916
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/economic_and_commerce/poverty",
+              "value": 0.4913082718849182
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/intervention/provision_of_goods_and_services/nutrition_intervention/malnutrition_screening",
+              "value": 0.4641331136226654
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/intervention/provision_of_goods_and_services/food_security_intervention/provide_food",
+              "value": 0.4494439363479614
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/condition/food_insecurity/food_nonutilization",
+              "value": 0.4369173049926758
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/environmental/pollution/climate_change",
+              "value": 0.43557822704315186
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/health_and_life/disease/human_disease",
+              "value": 0.43291112780570984
+            },
+            {
+              "@type": "Grounding",
+              "ontologyConcept": "wm/concept/causal_factor/condition/food_security/food_availability",
+              "value": 0.4152950048446655
+            }
+          ],
+          "@type": "Groundings"
+        }
+      ],
+      "@id": "_:Extraction_5"
+    }
+  ]
+}

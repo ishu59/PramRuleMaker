@@ -1,0 +1,22 @@
+begin model
+begin parameters
+  kf_fw_neg_1        2.000000e-05
+  water_trucking_0   1.000000e+04
+  fuel_0             1.000000e+04
+end parameters
+
+begin molecule types
+  water_trucking()
+  fuel()
+end molecule types
+
+begin species
+  water_trucking()   water_trucking_0
+  fuel()             fuel_0
+end species
+
+begin reaction rules
+  fuel_negatively_influences_water_trucking:  fuel() + water_trucking() -> fuel() + 0    kf_fw_neg_1
+end reaction rules
+
+end model
